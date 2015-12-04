@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+ <html>
+
+<script>
+  function send_f(f){f.submit();}
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+  <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style4.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+</head>
+<body>
+
+  <div class="container">
+    <section>
+      <div id="container_demo" >
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+
+
+        <div id="wrapper">
+          <div id="login" class="animate form">
+            <form action="authorization" onSubmit="return false">
+              <h1>My lists</h1>
+            
+             
+           
+			  
+			  <table class="simple-little-table" cellspacing='0'>
+	<tr>
+		<th>List name </th>
+		<th>Date</th>
+		<th>Status</th>
+		<th>Checked</th>
+	</tr><!-- Table Header -->
+
+				  <c:forEach items="${requestScope.filmList}" var="filmInf">
+					  <td><a href="blog.harrix.org">Гиперссылка</a></td>
+					  <td>100%</td>
+					  <td>Да</td>
+				  </c:forEach>
+    
+
+	
+	<tr>
+		<td><a href="blog.harrix.org">Гиперссылка</a></td>
+		<td>80%</td>
+		<td><a href="blog.harrix.org">Да</a></td>
+	</tr>
+</table>
+            </form>
+          </div>
+
+        
+
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
